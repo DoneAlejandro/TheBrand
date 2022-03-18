@@ -658,6 +658,8 @@ body {
 .fetured__btn:hover {
   -webkit-box-shadow: 0 0 10px #fff;
           box-shadow: 0 0 10px #fff;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .fetured__cart {

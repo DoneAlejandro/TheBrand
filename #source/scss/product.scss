@@ -73,9 +73,9 @@ $fectured: 100vh/3;
 
 body {
 	font-family: "Lato", sans-serif;
-	display: grid;
-	min-height: 100vh;
-	grid-template-rows: auto 1fr min-content;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
 }
 
 /*Стиль контейнера*/
@@ -238,6 +238,10 @@ body {
 		padding: 12px;
 		display: inline-block;
 	}
+}
+
+.content {
+	flex: 1 0 auto;
 }
 
 // Стиль фильтрации страницы
@@ -508,6 +512,7 @@ body {
 	}
 	&__btn:hover {
 		box-shadow: 0 0 10px #fff;
+		transition-duration: $transd;
 	}
 	&__cart {
 		margin: 0 11px 0 0;
@@ -539,6 +544,7 @@ body {
 
 // Стиль футера
 .footer {
+	flex: 0 0 auto;
 	margin-top: 128px;
 	&__top {
 		background: #222224;

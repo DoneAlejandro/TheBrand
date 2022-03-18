@@ -79,12 +79,14 @@ img {
 /* h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}*/
 body {
   font-family: "Lato", sans-serif;
-  display: -ms-grid;
-  display: grid;
-  min-height: 100vh;
-  -ms-grid-rows: auto 1fr min-content;
-      grid-template-rows: auto 1fr -webkit-min-content;
-      grid-template-rows: auto 1fr min-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
 }
 
 /*Стиль контейнера*/
@@ -279,6 +281,12 @@ body {
   color: #6f6e6e;
   padding: 12px;
   display: inline-block;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .crumbs {
@@ -638,6 +646,8 @@ li:last-child .crumbs__list {
 .fetured__btn:hover {
   -webkit-box-shadow: 0 0 10px #fff;
           box-shadow: 0 0 10px #fff;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .fetured__cart {
@@ -683,6 +693,9 @@ li:last-child .crumbs__list {
 }
 
 .footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   margin-top: 128px;
 }
 
