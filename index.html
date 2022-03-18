@@ -1,0 +1,271 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="en">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+	<!-- Заголовок страницы в браузере -->
+	<title>The brand</title>
+	<!-- Кодировка страницы -->
+	<meta charset="UTF-8">
+	<meta name="format-derection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Favicon сайта -->
+	<link rel="icon" href="logo.ico">
+	<!-- Подключаем шрифты -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container header__page">
+			<nav class="header__left">
+				<a href="#" class="header__logo">
+					<img src="image/menu/logo.svg" alt="#">
+				</a>
+				<a href="#" class="header__loop">
+					<img src="image/menu/loop.svg" alt="#">
+				</a>
+			</nav>
+			<nav class="header__right">
+				<ul class="header__list">
+					<li>
+						<a href="#" class="header__icon"><img src="image/menu/burger.svg" alt="#"></a>
+						<ul class="sub-header__list">
+							<li>
+								<h3 class="header__navigation-title">MENU</h3>
+							</li>
+							<li>
+								<a href="#" class="header__navigation-link">MAN</a>
+								<ul class="sub-sub-header__list sub-sub-header__list_man">
+									<li>
+										<a href="#" class="sub-sub-header__link">Accessories</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">Bags</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">Denim</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">T-Shirts</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="header__navigation-link">WOMAN</a>
+								<ul class="sub-sub-header__list sub-sub-header__list_woman">
+									<li>
+										<a href="#" class="sub-sub-header__link">Accessories</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">Jackets & Coats</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">Polos</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">T-Shirts</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">Shirts</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="header__navigation-link">KIDS</a>
+								<ul class="sub-sub-header__list sub-sub-header__list_kids">
+									<li>
+										<a href="#" class="sub-sub-header__link">Accessories</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">Jackets & Coats</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">Polos</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">T-Shirts</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">Shirts</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">Bags</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<a href="registration.html" class="header__icon-login"><img src="image/menu/icon.svg" alt="#"></a>
+				<span class="header__icon-cart-block">
+					<a href="#" class="header__icon-cart"><img src="image/menu/cart.svg" alt="#"></a>
+					<span class="header__icon-span">0</span>
+				</span>
+				<div class="basket hidden">
+					<div class="basketRow basketHeader">
+						<div>Название товара</div>
+						<div>Количество</div>
+						<div>Цена за шт.</div>
+						<div>Итого</div>
+					</div>
+
+					<div class="basketTotal">
+						Товаров в корзине на сумму:
+						$<span class="basketTotalValue">0</span>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main class="content">
+		<section class="intro">
+			<div class="container intro__wrap">
+				<div class="intro__wrap-height"></div>
+				<div class="intro__text">
+					<h1 class="intro__text-main">
+						<span class="intro__text-brend">THE BRAND</span>
+						OF LUXERIOUS <span class="intro__text-fashion">FASHION</span>
+					</h1>
+				</div>
+			</div>
+		</section>
+		<section class="card">
+			<div class="container card__page">
+				<div class="card__block">
+					<div class="card__item">
+						<img class="card__image" src="image/card/women.jpg" alt="#">
+						<p class="card__text">30% OFF <span>FOR WOMEN</span></p>
+					</div>
+					<div class="card__item">
+						<img class="card__image" src="image/card/men.jpg" alt="#">
+						<p class="card__text">HOT DEAL <span>FOR MEN</span></p>
+					</div>
+					<div class="card__item">
+						<img class="card__image" src="image/card/kid.jpg" alt="#">
+						<p class="card__text">NEW ARRIVALS <span>FOR KIDS</span></p>
+					</div>
+				</div>
+				<div class="card__item-big">
+					<div class="card__item-big card__item-big_width">
+						<img class="card__image-big" src="image/card/shoes.jpg" alt="#">
+						<p class="card__text card__text">LUXIROUS & TRENDY <span>ACCESORIES</span></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="fetured">
+			<div class="container fetured__page">
+				<div class="fetured__title">
+					<h2>Fetured Items</h2>
+					<p>Shop for items based on what we featured in this week</p>
+				</div>
+				<div class="fetured__item">
+				</div>
+				<div class="fetured__button">
+					<a class="fetured__browse" href="catalog.html">Browse All Product</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="container footer__page">
+				<div class="footer__column">
+					<div class="footer__image">
+						<img src="image/footer/car.svg" alt="#">
+					</div>
+					<div class="footer__title">
+						<h3>Free Delivery</h3>
+					</div>
+					<div class="footer__paragraph">
+						<p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+						</p>
+					</div>
+				</div>
+				<div class="footer__column">
+					<div class="footer__image">
+						<img src="image/footer/percent.svg" alt="#">
+					</div>
+					<div class="footer__title">
+						<h3>Sales & discounts</h3>
+					</div>
+					<div class="footer__paragraph">
+						<p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+						</p>
+					</div>
+				</div>
+				<div class="footer__column">
+					<div class="footer__image">
+						<img src="image/footer/crown.svg" alt="#">
+					</div>
+					<div class="footer__title">
+						<h3>Quality assurance</h3>
+					</div>
+					<div class="footer__paragraph">
+						<p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__center">
+			<div class="container footer__intro">
+				<article class="footer__comment">
+					<div class="footer__people">
+						<img src="image/footer/women.png" alt="#">
+					</div>
+					<div class="footer__text">
+						<p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span>a pulvinar purus condimentum</span>“
+						</p>
+					</div>
+				</article>
+				<div class="footer__input">
+					<div class="footer__subtitle">
+						<h3>SUBSCRIBE</h3>
+						<h4>FOR OUR NEWLETTER AND PROMOTION</h4>
+					</div>
+					<form action="#" class="footer__search">
+						<input placeholder="Enter Your Email" type="email" class="footer__field">
+						<input type="submit" value="Subscribe" class="footer__btn">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container footer__net">
+				<div class="footer__copy">
+					<p>2021 &copy; All rights reserved.</p>
+				</div>
+				<div class="footer__social">
+					<a href="#" class="footer__min-link">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+					<a href="#" class="footer__min-link">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#" class="footer__min-link">
+						<i class="fab fa-pinterest-p"></i>
+					</a>
+					<a href="#" class="footer__min-link">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Подключаем скрипты -->
+	<script src="js/basket.js"></script>
+	<script src="js/productDTO.js"></script>
+	<script src="js/products.js"></script>
+	<script src="js/productsCards.js"></script>
+	<script src="https://kit.fontawesome.com/c9b9b3d2fd.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
