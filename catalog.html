@@ -1,0 +1,407 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="en">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+	<!-- Заголовок страницы в браузере -->
+	<title>Catalog</title>
+	<!-- Кодировка страницы -->
+	<meta charset="UTF-8">
+	<meta name="format-derection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Favicon сайта -->
+	<link rel="icon" href="logo.ico">
+	<!-- Подключаем шрифты -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="css/catalog.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container header__page">
+			<nav class="header__left">
+				<a href="index.html" class="header__logo">
+					<img src="image/menu/logo.svg" alt="#">
+				</a>
+				<a href="#" class="header__loop">
+					<img src="image/menu/loop.svg" alt="#">
+				</a>
+			</nav>
+			<nav class="header__right">
+				<ul class="header__list">
+					<li>
+						<a href="#" class="header__icon"><img src="image/menu/burger.svg" alt="#"></a>
+						<ul class="sub-header__list">
+							<li>
+								<h3 class="header__navigation-title">MENU</h3>
+							</li>
+							<li>
+								<a href="#" class="header__navigation-link">MAN</a>
+								<ul class="sub-sub-header__list sub-sub-header__list_man">
+									<li>
+										<a href="#" class="sub-sub-header__link">Accessories</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">Bags</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">Denim</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">T-Shirts</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="header__navigation-link">WOMAN</a>
+								<ul class="sub-sub-header__list sub-sub-header__list_woman">
+									<li>
+										<a href="#" class="sub-sub-header__link">Accessories</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">Jackets & Coats</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">Polos</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">T-Shirts</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">Shirts</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="header__navigation-link">KIDS</a>
+								<ul class="sub-sub-header__list sub-sub-header__list_kids">
+									<li>
+										<a href="#" class="sub-sub-header__link">Accessories</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">Jackets & Coats</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">Polos</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">T-Shirts</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">Shirts</a>
+									</li>
+									<li>
+										<a href="#" class="sub-sub-header__link">Bags</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<a href="registration.html" class="header__icon-login"><img src="image/menu/icon.svg" alt="#"></a>
+				<span class="header__icon-cart-block">
+					<a href="#" class="header__icon-cart"><img src="image/menu/cart.svg" alt="#"></a>
+					<span class="header__icon-span">0</span>
+				</span>
+				<div class="basket hidden">
+					<div class="basketRow basketHeader">
+						<div>Название товара</div>
+						<div>Количество</div>
+						<div>Цена за шт.</div>
+						<div>Итого</div>
+					</div>
+
+					<div class="basketTotal">
+						Товаров в корзине на сумму:
+						$<span class="basketTotalValue">0</span>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main class="content">
+		<section class="crumbs">
+			<div class="container crumbs__page">
+				<h1 class="crumbs__title">NEW ARRIVALS</h1>
+				<nav>
+					<ul class="crumbs__filter">
+						<li class="crumbs__li"><a href="index.html" class="crumbs__list">HOME /</a></li>
+						<li class="crumbs__li"><a href="#" class="crumbs__list">MEN /</a></li>
+						<li class="crumbs__li"><a href="#" class="crumbs__list">NEW ARRIVALS</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<section class="filter">
+			<div class="container filter__page">
+				<div class="products__filter">
+					<div class="products__filter-left">
+						<details class="products__filter-left-drop">
+							<summary class="products__filter-left-drop-div">
+								<span class="products__filter-left-header">FILTER</span>
+								<svg class="products__filter-left-svg" width="15" height="10" viewBox="0 0 15 10" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+								</svg>
+							</summary>
+							<details class="products__filter-left-det" open>
+								<summary class="products__filter-drop-summary">CATEGORY</summary>
+								<a href="#" class="products__filter-drop-span">Accessories</a>
+								<a href="#" class="products__filter-drop-span">Bags</a>
+								<a href="#" class="products__filter-drop-span">Denim</a>
+								<a href="#" class="products__filter-drop-span">Hoodies & Sweatshirts</a>
+								<a href="#" class="products__filter-drop-span">Jackets & Coats</a>
+								<a href="#" class="products__filter-drop-span">Polos</a>
+								<a href="#" class="products__filter-drop-span">Shirts</a>
+								<a href="#" class="products__filter-drop-span">Shoes</a>
+								<a href="#" class="products__filter-drop-span">Sweaters & Knits</a>
+								<a href="#" class="products__filter-drop-span">T-Shirts</a>
+								<a href="#" class="products__filter-drop-span">Tanks</a>
+							</details>
+							<details class="products__filter-left-det">
+								<summary class="products__filter-drop-summary">BRAND</summary>
+								<a href="#" class="products__filter-drop-span">Empty</a>
+								<a href="#" class="products__filter-drop-span">Empty</a>
+								<a href="#" class="products__filter-drop-span">Empty</a>
+							</details>
+							<details class="products__filter-left-det">
+								<summary class="products__filter-drop-summary">DESIGNER</summary>
+								<a href="#" class="products__filter-drop-span">Empty</a>
+								<a href="#" class="products__filter-drop-span">Empty</a>
+								<a href="#" class="products__filter-drop-span">Empty</a>
+							</details>
+						</details>
+					</div>
+					<form action="#" class="products__form">
+						<div class="product-choose">
+							<div class="product-choose__div">
+								<div class="product-choose__align" onclick="openClose('hidden__trending');">
+									TRENDING NOW
+									<img class="product-choose__img" src="image/catalog/arrow.svg" alt="open">
+								</div>
+								<div class="product-choose__drop" id="hidden__trending">
+									<div class="product-choose__drop-div">
+										<input type="checkbox" id="check11" class="product-choose__chbx"><label
+											for="check11"><span>Empty</span></label>
+									</div>
+									<div class="product-choose__drop-div">
+										<input type="checkbox" id="check12" class="product-choose__chbx"><label
+											for="check12"><span>Empty</span></label>
+									</div>
+									<div class="product-choose__drop-div">
+										<input type="checkbox" id="check13" class="product-choose__chbx"><label
+											for="check13"><span>Empty</span></label>
+									</div>
+									<div class="product-choose__drop-div">
+										<input type="checkbox" id="check14" class="product-choose__chbx"><label
+											for="check14"><span>Empty</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="product-choose__div">
+								<div class="product-choose__align" onclick="openClose('hidden__size');">
+									SIZE
+									<img class="product-choose__img" src="image/catalog/arrow.svg" alt="open">
+								</div>
+								<div class="product-choose__drop" id="hidden__size">
+									<div class="product-choose__drop-div">
+										<input type="checkbox" id="check21" class="product-choose__chbx"><label
+											for="check21"><span>XS</span></label>
+									</div>
+									<div class="product-choose__drop-div">
+										<input type="checkbox" id="check22" class="product-choose__chbx"><label
+											for="check22"><span>S</span></label>
+									</div>
+									<div class="product-choose__drop-div">
+										<input type="checkbox" id="check23" class="product-choose__chbx"><label
+											for="check23"><span>M</span></label>
+									</div>
+									<div class="product-choose__drop-div">
+										<input type="checkbox" id="check24" class="product-choose__chbx"><label
+											for="check24"><span>L</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="product-choose__div">
+								<div class="product-choose__align" onclick="openClose('hidden__price');">
+									PRICE
+									<img class="product-choose__img" src="image/catalog/arrow.svg" alt="open">
+								</div>
+								<div class="product-choose__drop hidden__price" id="hidden__price">
+									<div class="product-choose__drop-div">
+										<input type="checkbox" id="check31" class="product-choose__chbx"><label
+											for="check31"><span>Empty</span></label>
+									</div>
+									<div class="product-choose__drop-div">
+										<input type="checkbox" id="check32" class="product-choose__chbx"><label
+											for="check32"><span>Empty</span></label>
+									</div>
+									<div class="product-choose__drop-div">
+										<input type="checkbox" id="check33" class="product-choose__chbx"><label
+											for="check33"><span>Empty</span></label>
+									</div>
+									<div class="product-choose__drop-div">
+										<input type="checkbox" id="check34" class="product-choose__chbx"><label
+											for="check34"><span>Empty</span></label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+					<div class="products__filter-right"></div>
+				</div>
+			</div>
+		</section>
+		<section class="fetured">
+			<div class="container fetured__page">
+				<div class="fetured__item">
+				</div>
+			</div>
+			<nav class="navigation">
+				<div class="navigation__page container">
+					<ul class="navigation__panigation-list">
+						<li class="navigation__panigation-item">
+							<a href="#" class="navigation__panigation-link"> <i class="fas fa-chevron-left"></i>
+							</a>
+						</li>
+						<li class="navigation__panigation-item">
+							<a href="#" class="navigation__panigation-link">1</a>
+						</li>
+						<li class="navigation__panigation-item">
+							<a href="#" class="navigation__panigation-link">2</a>
+						</li>
+						<li class="navigation__panigation-item">
+							<a href="#" class="navigation__panigation-link">3</a>
+						</li>
+						<li class="navigation__panigation-item">
+							<a href="#" class="navigation__panigation-link">4</a>
+						</li>
+						<li class="navigation__panigation-item">
+							<a href="#" class="navigation__panigation-link">5</a>
+						</li>
+						<li class="navigation__panigation-item">
+							<a href="#" class="navigation__panigation-link">6</a>
+						</li>
+						<li class="navigation__panigation-item">
+							<a href="#" class="navigation__panigation-link">.....</a>
+						</li>
+						<li class="navigation__panigation-item">
+							<a href="#" class="navigation__panigation-link">20</a>
+						</li>
+						<li class="navigation__panigation-item">
+							<a href="#" class="navigation__panigation-link"> <i class="fas fa-chevron-right"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="container footer__page">
+				<div class="footer__column">
+					<div class="footer__image">
+						<img src="image/footer/car.svg" alt="#">
+					</div>
+					<div class="footer__title">
+						<h3>Free Delivery</h3>
+					</div>
+					<div class="footer__paragraph">
+						<p>
+							Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+						</p>
+					</div>
+				</div>
+				<div class="footer__column">
+					<div class="footer__image">
+						<img src="image/footer/percent.svg" alt="#">
+					</div>
+					<div class="footer__title">
+						<h3>Sales & discounts</h3>
+					</div>
+					<div class="footer__paragraph">
+						<p>
+							Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+						</p>
+					</div>
+				</div>
+				<div class="footer__column">
+					<div class="footer__image">
+						<img src="image/footer/crown.svg" alt="#">
+					</div>
+					<div class="footer__title">
+						<h3>Quality assurance</h3>
+					</div>
+					<div class="footer__paragraph">
+						<p>
+							Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__center">
+			<div class="container footer__intro">
+				<article class="footer__comment">
+					<div class="footer__people">
+						<img src="image/footer/women.png" alt="#">
+					</div>
+					<div class="footer__text">
+						<p>
+							“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+							<span>a pulvinar purus condimentum</span>
+							“
+						</p>
+					</div>
+				</article>
+				<div class="footer__input">
+					<div class="footer__subtitle">
+						<h3>SUBSCRIBE</h3>
+						<h4>FOR OUR NEWLETTER AND PROMOTION</h4>
+					</div>
+					<form action="#" class="footer__search">
+						<input placeholder="Enter Your Email" type="email" class="footer__field">
+						<input type="submit" value="Subscribe" class="footer__btn">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container footer__net">
+				<div class="footer__copy">
+					<p>2021 &copy; All rights reserved.</p>
+				</div>
+				<div class="footer__social">
+					<a href="#" class="footer__min-link">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+					<a href="#" class="footer__min-link">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#" class="footer__min-link">
+						<i class="fab fa-pinterest-p"></i>
+					</a>
+					<a href="#" class="footer__min-link">
+						<i class="fab fa-twitter"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Подключаем скрипты -->
+	<script src="js/filter.js"></script>
+	<script src="js/basket.js"></script>
+	<script src="js/productDTO.js"></script>
+	<script src="js/products.js"></script>
+	<script src="js/productsCards.js"></script>
+	<script src="https://kit.fontawesome.com/c9b9b3d2fd.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
