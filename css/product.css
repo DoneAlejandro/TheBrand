@@ -983,9 +983,6 @@ li:last-child .crumbs__list {
   .fetured__card {
     max-width: 49%;
   }
-  .fetured__card:nth-child(1) {
-    display: none;
-  }
   .fetured__button {
     margin: 0 0 65px 0;
   }
