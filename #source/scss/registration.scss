@@ -103,6 +103,7 @@ body {
 	}
 	&__right {
 		display: flex;
+		align-items: center;
 	}
 	&__right > li {
 		position: relative;
@@ -347,10 +348,10 @@ body {
 	}
 
 	.fa-arrow-right {
-		padding: 0 0 0 20px;
+		margin-left: 20px;
 	}
 	.fa-check {
-		padding: 0 23px 0 0;
+		margin-right: 20px;
 	}
 }
 
@@ -529,6 +530,11 @@ body {
 
 // Медиазапросы
 @media screen and (max-width: 1024px) {
+	.sub-header {
+		&__list {
+			right: 0px;
+		}
+	}
 	.registration {
 		&__loyal {
 			font-size: 16px;

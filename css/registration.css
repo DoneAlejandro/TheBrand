@@ -125,6 +125,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__right > li {
@@ -426,11 +429,11 @@ body {
 }
 
 .registration .fa-arrow-right {
-  padding: 0 0 0 20px;
+  margin-left: 20px;
 }
 
 .registration .fa-check {
-  padding: 0 23px 0 0;
+  margin-right: 20px;
 }
 
 .footer {
@@ -699,6 +702,9 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+  .sub-header__list {
+    right: 0px;
+  }
   .registration__loyal {
     font-size: 16px;
     line-height: 19px;

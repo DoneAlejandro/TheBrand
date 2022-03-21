@@ -107,6 +107,7 @@ body {
 	}
 	&__right {
 		display: flex;
+		align-items: center;
 	}
 	&__right > li {
 		position: relative;
@@ -782,6 +783,11 @@ body {
 	}
 }
 @media screen and (max-width: 1024px) {
+	.sub-header {
+		&__list {
+			right: 0px;
+		}
+	}
 	.products {
 		&__filter {
 			max-width: 736px;
