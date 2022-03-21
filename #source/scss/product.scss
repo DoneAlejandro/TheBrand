@@ -103,6 +103,7 @@ body {
 	}
 	&__right {
 		display: flex;
+		align-items: center;
 	}
 	&__right > li {
 		position: relative;
@@ -426,7 +427,7 @@ body {
 
 	.fa-cart-arrow-down {
 		color: #f26376;
-		padding: 0 23px 0 0;
+		margin-right: 23px;
 	}
 }
 
@@ -711,6 +712,13 @@ body {
 
 	.fa-twitter {
 		color: #000;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.sub-header {
+		&__list {
+			right: 0px;
+		}
 	}
 }
 @media screen and (max-width: 768px) {

@@ -119,6 +119,7 @@ body {
 	}
 	&__right {
 		display: flex;
+		align-items: center;
 	}
 	&__right > li {
 		position: relative;
@@ -624,6 +625,11 @@ body {
 
 // Медиазапросы
 @media screen and (max-width: 1024px) {
+	.sub-header {
+		&__list {
+			right: 0px;
+		}
+	}
 	.buy {
 		&__page {
 			flex-direction: column;

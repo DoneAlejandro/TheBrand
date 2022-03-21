@@ -103,6 +103,7 @@ body {
 	}
 	&__right {
 		display: flex;
+		align-items: center;
 	}
 	&__right > li {
 		position: relative;
@@ -621,7 +622,13 @@ body {
 		color: #000;
 	}
 }
-
+@media screen and (max-width: 1024px) {
+	.sub-header {
+		&__list {
+			right: 0px;
+		}
+	}
+}
 @media screen and (max-width: 768px) {
 	.basket {
 		right: 50px;
